@@ -2,6 +2,8 @@
 return array (
   'modules' => 
   array (
+    'MageClass_First' => 1,
+    'MageClass_Second' => 1,
     'Magento_Store' => 1,
     'Magento_AdvancedPricingImportExport' => 1,
     'Magento_Directory' => 1,

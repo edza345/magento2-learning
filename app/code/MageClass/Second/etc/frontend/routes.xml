@@ -1,7 +1,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
     <router id="standard">
-        <route id="first" frontName="first">
-            <module name="MageClass_First"/>
+        <route id="second" frontName="second">
+            <module name="MageClass_Second"/>
         </route>
     </router>
 </config>

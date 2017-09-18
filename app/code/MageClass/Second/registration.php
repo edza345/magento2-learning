@@ -7,7 +7,7 @@
  */
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'MageClass_First',
+    'MageClass_Second',
     __DIR__
 );
 ?>
