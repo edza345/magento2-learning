@@ -1,2 +1,15 @@
 var/
 pub/
+vendor/
+lib/
+CHANGELOG.md
+CONTRIBUTING.md
+CONTRIBUTOR_LICENSE_AGREEMENT.html
+COPYING.txt
+LICENSE.txt
+LICENSE_AFL.txt
+README.md
+nginx.conf.sample
+node_modules/
+php.ini.sample
+

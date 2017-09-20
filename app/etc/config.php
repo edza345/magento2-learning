@@ -2,6 +2,7 @@
 return array (
   'modules' => 
   array (
+    'Debug_Xmldebug' => 1,
     'MageClass_First' => 1,
     'MageClass_Second' => 1,
     'Magento_Store' => 1,
