@@ -11,16 +11,20 @@ class Products extends \Magento\Framework\Model\AbstractModel
 {
     protected $_productFactory;
     public function __construct(
-        \Magento\Catalog\Model\ProductFactory $productFactory
+        \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory $productFactory
     ) {
         $this->_productFactory = $productFactory;
     }
-    public function getOddProductCollection()
-    {
-        $collection = $this->_productFactory->create()->getCollection();
-        $collection->addAttributeToSelect("*");
-        $collection->setPageSize(10);
-        return $collection;
+    public function getOddProductCollection($id = null) {
+        $data = $this->_productFactory->create();
+        $data->addFieldToFilter('status', 1);
+        $data->addFieldToFilter('type_id', 'simple');
+
+        if ($id) {
+            $data->addFieldToFilter('entity_id', $id);
+        }
+        $data->addAttributeToSelect('*');
+        return $data->load()->toArray();
     }
     public function sayHi()
     {
